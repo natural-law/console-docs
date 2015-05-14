@@ -39,7 +39,7 @@ Available commands:
 There are depend relationship between commands. Two rules about dependencies:  
 
 * The dependent commands will be invoked first.
-* If command A denpend on command B. When you are using command A, the arguments you used will be passed to command B.
+* If command A depend on command B. When you are using command A, the arguments you used will be passed to command B.
 
 For example: Command `run` depends on command `deploy`, and `deploy` depends on `compile`.  
 
@@ -61,7 +61,7 @@ For example: Command `run` depends on command `deploy`, and `deploy` depends on 
 	```
 	import cocos
 
-    # Plugins should be a sublass of CCPlugin
+    # Plugins should be a subclass of CCPlugin
     class CCPluginCustom(cocos.CCPlugin):   
         # in default category
         @staticmethod
