@@ -9,13 +9,13 @@ The cocos2d-console is implemented by `Python`. You can use it in `Windows, Mac 
 
 * Python 2.7 is required *(Now only support version 2.7)*.
 * Required by iOS & Mac:
-	* XCode *(Well tested with XCode 5.0)*
+	* XCode
 * Required by android:
 	* [Android NDK](https://developer.android.com/tools/sdk/ndk/)
 	* [Android SDK](https://developer.android.com/tools/sdk/)
 	* [Apache Ant](http://ant.apache.org/)
 * Required by win32:
-	* Visual Studio 2012 or 2013
+	* Visual Studio
 * Required by linux:
 	* Please run the `build/install-deps-linux.sh` in `cocos2d-x` or `cocos2d-js` to install the dependencies.
 	

@@ -25,6 +25,7 @@ usage: cocos compile [-h] [-s SRC_DIR] [-q] [-p PLATFORM] [-m MODE] [-j JOBS]
 	-p, --platform | the target platform | `android` | Specify the target platform. | yes
 	-m, --mode | the compiling mode | `release` | Set the compile mode, should be `debug` or `release`. Default is debug. | no
 	-j, --jobs | number of jobs at once | `4` | Use N jobs at once. It's only take effect with target `android` & `linux`.  | no
+	-o, --output-dir | output path | `./output` | Set the output path. | no
 
 * **Android Arguments:**
 
@@ -32,12 +33,22 @@ usage: cocos compile [-h] [-s SRC_DIR] [-q] [-p PLATFORM] [-m MODE] [-j JOBS]
 	:------------: | :-------------: | :------------: | :------------: | :------------:
 	--ap | int value (must >= 10) | `16` | Specify the API-Level of android sdk. Console will auto select it if not specified. | no
 	--ndk-mode | the compiling mode of ndk-build | `release` | Set the compile mode of ndk-build, should be one of {debug, release, none}, native code will not be compiled when the value is none. Default is same value with `-m` | no
+	--app-abi | the APP_ABI of ndk-build | `x86` | Set the APP_ABI of ndk-build.Can be multi value separated with ':'. Sample : `--app-aib armeabi:x86:mips`. Default value is 'armeabi'. | no
+	--ndk-toolchain | the NDK_TOOLCHAIN of ndk-build | `x86-4.9` | Specify the NDK_TOOLCHAIN of ndk-build. | no
+	--ndk-cppflags | the APP_CPPFLAGS of ndk-build | `-frtti` | Specify the APP_CPPFLAGS of ndk-build. | no
 	
 * **Web Arguments:**
 
 	arg | available value | sample | description | necessary
 	:------------: | :-------------: | :------------: | :------------: | :------------:
 	--source-map | - | - | Enable source-map | no
+	--advanced | - | - | Compile all source js files using Closure Compiler's advanced mode, bigger compression ratio bug more risk. | no
+
+* **iOS/Mac 平台参数：**
+
+	arg | available value | sample | description | necessary
+	:------------: | :-------------: | :------------: | :------------: | :------------:
+	-t, --target | target name | `MyLuaGame iOS` | Specify the target name to be compiled. | no
 
 * **iOS Arguments:**
 
