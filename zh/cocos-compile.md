@@ -34,9 +34,6 @@ usage: cocos compile [-h] [-s SRC_DIR] [-q] [-p PLATFORM] [-m MODE] [-j JOBS]
 	:------------: | :-------------: | :------------: | :------------: | :------------:
 	--ap | 整数 (必须 >= 10) | `16` | 指定要使用的 Android API-Level。如果未指定，则从 SDK 中自动选择。 | 否
 	--ndk-mode | 调用 ndk-build 的模式 | `release` | 设置 ndk-build 的模式。可选值： {debug, release, none}。如果指定为 none，则跳过 ndk-build 步骤。默认值与 `-m` 参数值一致。 | 否
-	--app-abi | ndk-build 的 APP_ABI 属性 | `x86` | 设置 ndk-build 的 APP_ABI 属性。可以使用 ':' 分隔多个值。示例：`--app-aib armeabi:x86:mips`。默认值为 'armeabi'。 | 否
-	--ndk-toolchain | ndk-build 的 NDK_TOOLCHAIN 属性 | `x86-4.9` | 指定 ndk-build 的 NDK_TOOLCHAIN 属性。 | 否
-	--ndk-cppflags | ndk-build 的 APP_CPPFLAGS 属性。 | `-frtti` | 指定 ndk-build 的 APP_CPPFLAGS 属性。 | 否
 
 * **Web 平台参数：**
 

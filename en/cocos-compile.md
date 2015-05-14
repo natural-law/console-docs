@@ -33,9 +33,6 @@ usage: cocos compile [-h] [-s SRC_DIR] [-q] [-p PLATFORM] [-m MODE] [-j JOBS]
 	:------------: | :-------------: | :------------: | :------------: | :------------:
 	--ap | int value (must >= 10) | `16` | Specify the API-Level of android sdk. Console will auto select it if not specified. | no
 	--ndk-mode | the compiling mode of ndk-build | `release` | Set the compile mode of ndk-build, should be one of {debug, release, none}, native code will not be compiled when the value is none. Default is same value with `-m` | no
-	--app-abi | the APP_ABI of ndk-build | `x86` | Set the APP_ABI of ndk-build.Can be multi value separated with ':'. Sample : `--app-aib armeabi:x86:mips`. Default value is 'armeabi'. | no
-	--ndk-toolchain | the NDK_TOOLCHAIN of ndk-build | `x86-4.9` | Specify the NDK_TOOLCHAIN of ndk-build. | no
-	--ndk-cppflags | the APP_CPPFLAGS of ndk-build | `-frtti` | Specify the APP_CPPFLAGS of ndk-build. | no
 	
 * **Web Arguments:**
 
