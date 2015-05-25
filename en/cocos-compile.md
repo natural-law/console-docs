@@ -33,6 +33,7 @@ usage: cocos compile [-h] [-s SRC_DIR] [-q] [-p PLATFORM] [-m MODE] [-j JOBS]
 	:------------: | :-------------: | :------------: | :------------: | :------------:
 	--ap | int value (must >= 10) | `16` | Specify the API-Level of android sdk. Console will auto select it if not specified. | no
 	--ndk-mode | the compiling mode of ndk-build | `release` | Set the compile mode of ndk-build, should be one of {debug, release, none}, native code will not be compiled when the value is none. Default is same value with `-m` | no
+	--android-studio | - | - | Specify compiling the Android Studio project. | no
 	
 * **Web Arguments:**
 
