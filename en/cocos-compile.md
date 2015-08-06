@@ -6,9 +6,13 @@ Build an existed project.
 ## Usage
 
 ```
-usage: cocos compile [-h] [-s SRC_DIR] [-q] [-p PLATFORM] [-m MODE] [-j JOBS]
+usage: cocos compile [-h] [-s SRC_DIR] [-q] [-p PLATFORM]
+                     [--proj-dir PROJ_DIR] [-m MODE] [-j JOBS] [-o OUTPUT_DIR]
                      [--ap ANDROID_PLATFORM] [--ndk-mode NDK_MODE]
-                     [--source-map] [--sign-identity SIGN_ID] [--no-res]
+                     [--app-abi APP_ABI] [--ndk-toolchain TOOLCHAIN]
+                     [--ndk-cppflags CPPFLAGS] [--android-studio]
+                     [--vs VS_VERSION] [--source-map] [--advanced]
+                     [-t TARGET_NAME] [--sign-identity SIGN_ID] [--no-res]
                      [--compile-script {0,1}] [--lua-encrypt]
                      [--lua-encrypt-key LUA_ENCRYPT_KEY]
                      [--lua-encrypt-sign LUA_ENCRYPT_SIGN]
@@ -34,7 +38,13 @@ usage: cocos compile [-h] [-s SRC_DIR] [-q] [-p PLATFORM] [-m MODE] [-j JOBS]
 	--ap | int value (must >= 10) | `16` | Specify the API-Level of android sdk. Console will auto select it if not specified. | no
 	--ndk-mode | the compiling mode of ndk-build | `release` | Set the compile mode of ndk-build, should be one of {debug, release, none}, native code will not be compiled when the value is none. Default is same value with `-m` | no
 	--android-studio | - | - | Specify compiling the Android Studio project. | no
-	
+
+* **Windows Arguments:**
+
+	arg | available value | sample | description | necessary
+	:------------: | :-------------: | :------------: | :------------: | :------------:
+	--vs | int value | `2013` | Specify the Visual Studio version will be used. Such as: 2013. Default find available version automatically. | no
+
 * **Web Arguments:**
 
 	arg | available value | sample | description | necessary

@@ -7,9 +7,13 @@
 ## 用法
 
 ```
-usage: cocos compile [-h] [-s SRC_DIR] [-q] [-p PLATFORM] [-m MODE] [-j JOBS]
+usage: cocos compile [-h] [-s SRC_DIR] [-q] [-p PLATFORM]
+                     [--proj-dir PROJ_DIR] [-m MODE] [-j JOBS] [-o OUTPUT_DIR]
                      [--ap ANDROID_PLATFORM] [--ndk-mode NDK_MODE]
-                     [--source-map] [--sign-identity SIGN_ID] [--no-res]
+                     [--app-abi APP_ABI] [--ndk-toolchain TOOLCHAIN]
+                     [--ndk-cppflags CPPFLAGS] [--android-studio]
+                     [--vs VS_VERSION] [--source-map] [--advanced]
+                     [-t TARGET_NAME] [--sign-identity SIGN_ID] [--no-res]
                      [--compile-script {0,1}] [--lua-encrypt]
                      [--lua-encrypt-key LUA_ENCRYPT_KEY]
                      [--lua-encrypt-sign LUA_ENCRYPT_SIGN]
@@ -35,6 +39,12 @@ usage: cocos compile [-h] [-s SRC_DIR] [-q] [-p PLATFORM] [-m MODE] [-j JOBS]
 	--ap | 整数 (必须 >= 10) | `16` | 指定要使用的 Android API-Level。如果未指定，则从 SDK 中自动选择。 | 否
 	--ndk-mode | 调用 ndk-build 的模式 | `release` | 设置 ndk-build 的模式。可选值： {debug, release, none}。如果指定为 none，则跳过 ndk-build 步骤。默认值与 `-m` 参数值一致。 | 否
 	--android-studio | - | - | 指定编译 Android Studio 工程。 | 否
+
+* **Windows Arguments:**
+
+	参数 | 可用值 | 示例 | 描述 | 是否必需
+	:------------: | :-------------: | :------------: | :------------: | :------------:
+	--vs | 整数 | `2013` | 指定编译所使用的 Visual Studio 版本。如：2013。默认自动查找可用版本。 | 否
 
 * **Web 平台参数：**
 
