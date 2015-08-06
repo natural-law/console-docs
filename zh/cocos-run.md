@@ -33,6 +33,7 @@ cocos run [-h] [-s SRC_DIR] [-q] [-p PLATFORM] [-m MODE] [-b BROWSER]
 	--host | 服务器的 ip 地址 | `127.0.0.1` | 设置本地服务器的主机地址，默认值为 127.0.0.1 | 否
 	--port | 服务器端口号 | `8000` | 设置本地服务器的端口，默认值为 8000 | 否
 	-b, --browser | 浏览器程序路径 | `/Applications/Chrome.app` | 设置指定浏览器打开 url。如果未指定使用系统默认浏览器。 | 否
+	--param | 指定启动浏览器的附加参数。 | - | 用于 web simulator 的参数。 | 否
 
 
 ## 注意事项

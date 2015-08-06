@@ -29,8 +29,10 @@ cocos run [-h] [-s SRC_DIR] [-q] [-p PLATFORM] [-m MODE]
 
 	arg | available value | sample | description | necessary
 	:------------: | :-------------: | :------------: | :------------: | :------------:
+	-b, --browser | the path of browser used for open url. | `/Applications/Safari.app` | Specify the browser to open the url. Use the system default browser if not specified. | no
+	--param | The param for browser. | - | Used for web simulator. | no
 	--host | host ip of server | `127.0.0.1` | Set the host of the local web server, defualt is `127.0.0.1`. | no
-	SERVER_PORT | the port of server | `8000` | Set the port of the local web server, defualt is 8000 | no
+	--port | the port of server | `8000` | Set the port of the local web server, defualt is 8000 | no
 
 
 ## Attentions
