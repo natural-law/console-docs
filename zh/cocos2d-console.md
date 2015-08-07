@@ -37,6 +37,9 @@ cocos2d-console 是一个命令行工具集。可以用于创建，编译，运�
 * [run](cocos-run.md)
 * [jscompile](cocos-jscompile.md)
 * [luacompile](cocos-luacompile.md)
+* [gen-libs](cocos-gen-libs.md)
+* [gen-simulator](cocos-gen-simulator.md)
+* [gen-templates](cocos-gen-templates.md)
 
 ## 注意事项
 

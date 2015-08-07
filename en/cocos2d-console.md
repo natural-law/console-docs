@@ -34,6 +34,9 @@ Available commands:
 * [run](cocos-run.md)
 * [jscompile](cocos-jscompile.md)
 * [luacompile](cocos-luacompile.md)
+* [gen-libs](cocos-gen-libs.md)
+* [gen-simulator](cocos-gen-simulator.md)
+* [gen-templates](cocos-gen-templates.md)
 
 ## Attentions  
 There are depend relationship between commands. Two rules about dependencies:  

@@ -40,7 +40,7 @@ usage: cocos compile [-h] [-s SRC_DIR] [-q] [-p PLATFORM]
 	--ndk-mode | 调用 ndk-build 的模式 | `release` | 设置 ndk-build 的模式。可选值： {debug, release, none}。如果指定为 none，则跳过 ndk-build 步骤。默认值与 `-m` 参数值一致。 | 否
 	--android-studio | - | - | 指定编译 Android Studio 工程。 | 否
 
-* **Windows Arguments:**
+* **Windows 平台参数：**
 
 	参数 | 可用值 | 示例 | 描述 | 是否必需
 	:------------: | :-------------: | :------------: | :------------: | :------------:
