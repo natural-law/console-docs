@@ -19,6 +19,7 @@ arg | available value | sample | description | necessary
 -t, --template | a string of template name | `runtime` | Set the template name you want create from. Default value is `default` | no
 --ios-bundleid | string match `*.*.*` | `com.company.pkgname` | Set the bundle ID of iOS. | no
 --mac-bundleid | string match `*.*.*` | `com.company.pkgname` | Set the bundle ID of Mac. | no
+--portrait | - | - | Set the project be portrait. | no
 
 ## Attentions
 

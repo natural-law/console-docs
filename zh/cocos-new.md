@@ -19,6 +19,7 @@
 -t, --template | 模板名称 | `runtime` | 指定使用的模板名称，默认值为 `default` | 否
 --ios-bundleid | `*.*.*` 格式的字符串 | `com.company.pkgname` | 设置 iOS 的 bundle ID。 | 否
 --mac-bundleid | `*.*.*` 格式的字符串 | `com.company.pkgname` | 设置 Mac 的 bundle ID。 | 否
+--portrait | - | - | 设置工程为竖屏。 | 否
 
 ## 注意事项
 
